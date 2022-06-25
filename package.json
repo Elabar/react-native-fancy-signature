@@ -1,0 +1,34 @@
+{
+    "name": "react-native-fancy-signature",
+    "version": "0.0.1",
+    "description": "A signature component for react native (paper/fabric)",
+    "react-native": "src/index",
+    "source": "src/index",
+    "files": [
+        "src",
+        "android",
+        "ios",
+        "example-component.podspec",
+        "!android/build",
+        "!ios/build",
+        "!**/__tests__",
+        "!**/__fixtures__",
+        "!**/__mocks__"
+    ],
+    "scripts": {
+        "pre-pack": "npm pack && cd demo && npm install ../react-native-fancy-signature-0.0.1.tgz "
+    },
+    "keywords": ["react-native", "ios", "android"],
+    "repository": "https://github.com/Elabar/react-native-fancy-signature",
+    "author": "Lee Hoe Mun leehomun@gmail.com (https://github.com/Elabar)",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/Elabar/react-native-fancy-signature/issues"
+    },
+    "homepage": "https://github.com/Elabar/react-native-fancy-signature#readme",
+    "devDependencies": {},
+    "peerDependencies": {
+        "react": "*",
+        "react-native": "*"
+    }
+}
