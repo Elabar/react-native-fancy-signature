@@ -4,11 +4,12 @@
 > This project is currently under development!
 
 ## Usage
-```
+```jsx
 import FancySignature from 'react-native-fancy-signature/src/index'
 
 const App = () => {
     const signatureRef = useRef(null)
+    const [penColor] = useState("#FF00FF")
 
     const clearPad = () => {
         signatureRef.current.clear()
@@ -18,7 +19,7 @@ const App = () => {
         <View style={{flex: 1}}>
             <FancySignature
                 ref={signatureRef}
-                penColor="#FF00FF"
+                penColor={penColor}
                 style={{flex: 1}}
             >
         </View>
